@@ -1,0 +1,13 @@
+@tailwind utilities;
+
+:root {
+  --colors-error: red;
+  --colors-success: green;
+  --colors-info: blue;
+  --colors-warning: gold;
+  --colors-off: pink;
+  --colors-none: white;
+  --spacing-small: 5px;
+  --spacing-medium: 15px;
+  --spacing-large: 25px;
+}
