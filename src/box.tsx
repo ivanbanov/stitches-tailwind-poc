@@ -3,15 +3,18 @@ import { tw } from 'typewind'
 import { tv, type VariantProps } from 'tailwind-variants'
  
 const box = tv({
-  base: tw.p_small.text_none
-    .mobile(tw.p_small)
-    .tablet(tw.p_medium)
-    .desktop(tw.p_large),
+  base: tw.text_white
+    .mobile(tw.p_inset_200)
+    .tablet(tw.p_inset_300)
+    .desktop(tw.p_inset_400),
   variants: {
     foo: {
-      error: tw.bg_error,
-      success: tw.bg_success,
-      info: tw.bg_info.p_large,
+      success: tw.bg_green_600
+        .desktop(tw.mx_offset_200),
+      error: tw.bg_background_danger_prominent
+        .desktop(tw.mx_offset_400),
+      info: tw.bg_background_primary_prominent
+        .desktop(tw.mx_offset_600),
     },
     ghost: {
       true: tw.opacity_30
