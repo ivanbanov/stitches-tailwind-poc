@@ -2,7 +2,7 @@
   "name": "tailwind-poc",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.dev.js",
-    "build": "webpack build --config ./webpack.prod.js -o ./build",
+    "build": "rm -rf build && webpack build --config ./webpack.prod.js -o ./build",
     "postinstall": "typewind generate"
   },
   "dependencies": {
